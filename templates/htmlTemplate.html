@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<title>Milestone Project (rek)</title>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Scatter Plots</title>
+
+        <link rel="stylesheet" href="http://cdn.pydata.org/bokeh/release/bokeh-0.12.0.min.css" type="text/css" />
+        <link rel="stylesheet" href="http://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.0.min.css" type="text/css" />
+        <script type="text/javascript" src="http://cdn.pydata.org/bokeh/release/bokeh-0.12.0.min.js"></script>
+        <script type="text/javascript" src="http://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.0.min.js"></script>
+
+        {{myBokehScript|safe}}
+
+    </head>
+    <body>
+
+<div class=page>
+  <div class=metanav>
+
+    <h2>
+      This app plots closing price data over the past month.
+    </h2>
+
+    <form id='myInputForm' method='post' action='index.html' >
+      <p>
+    Please enter a ticker symbol: <input type='text' name='tickerInput' />
+    <input type='submit' value='Enter' />
+      </p>
+    </form>
+
+  </div>
+</div>
+        
+{{myBokehDiv|safe}}
+
+    </body>
+</html>
